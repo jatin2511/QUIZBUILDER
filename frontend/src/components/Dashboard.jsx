@@ -72,7 +72,7 @@ function Dashboard({ setcurrentselection,jwttoken }) {
 
         <div className={styles.trendingquizgrid}>
           {trendingData.map((quiz, index) => (
-            <div key={index} className={styles.trendinggriditem} onClick={() => window.open(quiz.link, '_blank')}>
+            <div key={index} className={styles.trendinggriditem} >
               <div>
               <div>{quiz.title.slice(0, 8)}</div>
 
