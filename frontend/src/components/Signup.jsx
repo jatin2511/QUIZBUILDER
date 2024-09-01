@@ -50,7 +50,7 @@ function Signup({ setsignupopen }) {
             setValidationError(errors);
         } else {
             try {
-                await axios.post('http://localhost:5000/api/auth/register', formData);
+                await axios.post('https://quizbuilder-ma4e.onrender.com/api/auth/register', formData);
                 setValidationError({});
                 setFormData({
                     name: '',

@@ -20,7 +20,7 @@ function Analytics({ jwttoken }) {
 
   const fetchQuizzes = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/analytics', {
+      const response = await axios.get('https://quizbuilder-ma4e.onrender.com/api/analytics', {
         headers: {
           'Authorization': `Bearer ${jwttoken}`,
           'Content-Type': 'application/json',

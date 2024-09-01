@@ -39,7 +39,7 @@ function Login({ setjwttoken }) {
         }
 
         try {
-            const response = await axios.post('http://localhost:5000/api/auth/login', formData);
+            const response = await axios.post('https://quizbuilder-ma4e.onrender.com/api/auth/login', formData);
             setjwttoken(response.data.token);
             localStorage.setItem('token', response.data.token); 
             setValidationError({});

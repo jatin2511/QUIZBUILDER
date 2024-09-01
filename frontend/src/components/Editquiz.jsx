@@ -16,7 +16,7 @@ function EditQuiz({jwttoken}) {
     const fetchQuizDetails = async () => {
       try {
         
-        const response = await axios.get(`http://localhost:5000/api/analytics/quiz/${quizid}`, {
+        const response = await axios.get(`hhttps://quizbuilder-ma4e.onrender.com/api/analytics/quiz/${quizid}`, {
           headers: {
             'Authorization': `Bearer ${jwttoken}`
           }
@@ -93,16 +93,16 @@ function EditQuiz({jwttoken}) {
       return;
     }
   
-    // Validate inputs
+
     if (!validateInputs()) {
       return;
     }
   
     try {
       await axios.put(
-        `http://localhost:5000/api/quiz/update/${quizid}`,
+        `https://quizbuilder-ma4e.onrender.com/api/quiz/update/${quizid}`,
         {
-          questions // Only send the questions field
+          questions 
         },
         {
           headers: {

@@ -179,7 +179,7 @@ function Createquiz() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5000/api/quiz/create',
+        'https://quizbuilder-ma4e.onrender.com/api/quiz/create',
         {
           title: quizName,
           type: selectedQuizType,

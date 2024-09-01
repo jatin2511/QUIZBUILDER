@@ -24,7 +24,7 @@ function Dashboard({ setcurrentselection,jwttoken }) {
         return;
       }
       console.log('Token retrieved');
-      const { data } = await axios.get('http://localhost:5000/api/dashboard', {
+      const { data } = await axios.get('https://quizbuilder-ma4e.onrender.com/api/dashboard', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'

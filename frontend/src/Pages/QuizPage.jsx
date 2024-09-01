@@ -18,7 +18,7 @@ function QuizPage() {
 
   const fetchQuizAnalytics = async () => {
     try {
-      const response = await axios.get(`http://localhost:5000/api/quiz/takequiz/${quizid}`, {
+      const response = await axios.get(`https://quizbuilder-ma4e.onrender.com/api/quiz/takequiz/${quizid}`, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -48,7 +48,7 @@ function QuizPage() {
 
   const updateQuizImpression = async () => {
     try {
-      await axios.post(`http://localhost:5000/api/quiz/impression/${quizid}`);
+      await axios.post(`https://quizbuilder-ma4e.onrender.com/api/quiz/impression/${quizid}`);
     } catch (error) {
       console.error('Error updating quiz impression:', error);
     }
@@ -57,7 +57,7 @@ function QuizPage() {
   const updateQuestionAttempt = async (questionId) => {
     try {
       if (questionId && !hasUpdatedAttempt.current.has(questionId)) {
-        await axios.post(`http://localhost:5000/api/quiz/${quizid}/question/impression/${questionId}`);
+        await axios.post(`https://quizbuilder-ma4e.onrender.com/api/quiz/${quizid}/question/impression/${questionId}`);
         hasUpdatedAttempt.current.add(questionId);
       }
     } catch (error) {
@@ -100,7 +100,7 @@ function QuizPage() {
   const updateCorrectAnswerCount = async (questionId) => {
     try {
       if (questionId) {
-        await axios.post(`http://localhost:5000/api/quiz/${quizid}/question/impression/correctanswer/${questionId}`);
+        await axios.post(`https://quizbuilder-ma4e.onrender.com/api/quiz/${quizid}/question/impression/correctanswer/${questionId}`);
       }
     } catch (error) {
       console.error('Error updating correct answer count:', error);
@@ -110,7 +110,7 @@ function QuizPage() {
   const updateOptionImpression = async (questionid, optionId) => {
     try {
       if (questionid) {
-        await axios.post(`http://localhost:5000/api/quiz/optionincreament/${quizid}/${questionid}/${optionId}`);
+        await axios.post(`https://quizbuilder-ma4e.onrender.com/api/quiz/optionincreament/${quizid}/${questionid}/${optionId}`);
       }
     } catch (error) {
       console.error('Error updating correct answer count:', error);
