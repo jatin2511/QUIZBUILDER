@@ -36,7 +36,7 @@ function App() {
             <Route path='/createquiz' element={!jwttoken ? <LoginSignupPage setjwttoken={setjwttoken}/> :<Createquiz />} />
             <Route path='/updatequiz/:quizid' element={!jwttoken ? <LoginSignupPage setjwttoken={setjwttoken}/> :<Editquiz jwttoken={jwttoken}/>} />
             <Route path='/quizanalysis/:quizid' element={!jwttoken ? <LoginSignupPage setjwttoken={setjwttoken}/> :<Quizanalysis jwttoken={jwttoken} />} />
-            <Route path='quiz/:quizid' element={<QuizPage/>}/>
+            <Route path='/quiz/:quizid' element={<QuizPage/>}/>
           </Routes>
         </div>
       </div>
