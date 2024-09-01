@@ -24,7 +24,7 @@ function Dashboard({ setcurrentselection,jwttoken }) {
         return;
       }
       console.log('Token retrieved');
-      const { data } = await axios.get('http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/dashboard', {
+      const { data } = await axios.get('https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/dashboard', {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'

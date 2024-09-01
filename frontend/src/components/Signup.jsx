@@ -50,7 +50,7 @@ function Signup({ setsignupopen }) {
             setValidationError(errors);
         } else {
             try {
-                await axios.post('http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/auth/register', formData);
+                await axios.post('https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/auth/register', formData);
                 setValidationError({});
                 setFormData({
                     name: '',

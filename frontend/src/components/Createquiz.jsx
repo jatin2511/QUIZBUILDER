@@ -179,7 +179,7 @@ function Createquiz() {
 
     try {
       const response = await axios.post(
-        'http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/create',
+        'https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/create',
         {
           title: quizName,
           type: selectedQuizType,

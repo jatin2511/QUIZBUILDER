@@ -16,7 +16,7 @@ function EditQuiz({jwttoken}) {
     const fetchQuizDetails = async () => {
       try {
         
-        const response = await axios.get(`hhttp://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/analytics/quiz/${quizid}`, {
+        const response = await axios.get(`https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/analytics/quiz/${quizid}`, {
           headers: {
             'Authorization': `Bearer ${jwttoken}`
           }
@@ -100,7 +100,7 @@ function EditQuiz({jwttoken}) {
   
     try {
       await axios.put(
-        `http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/update/${quizid}`,
+        `https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/update/${quizid}`,
         {
           questions 
         },

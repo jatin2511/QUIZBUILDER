@@ -39,7 +39,7 @@ function Login({ setjwttoken }) {
         }
 
         try {
-            const response = await axios.post('http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/auth/login', formData);
+            const response = await axios.post('https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/auth/login', formData);
             setjwttoken(response.data.token);
             localStorage.setItem('token', response.data.token); 
             setValidationError({});

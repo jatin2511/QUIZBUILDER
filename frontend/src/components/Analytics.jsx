@@ -20,7 +20,7 @@ function Analytics({ jwttoken }) {
 
   const fetchQuizzes = async () => {
     try {
-      const response = await axios.get('http://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/analytics', {
+      const response = await axios.get('https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/analytics', {
         headers: {
           'Authorization': `Bearer ${jwttoken}`,
           'Content-Type': 'application/json',
