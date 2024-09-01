@@ -42,7 +42,7 @@ function Analytics({ jwttoken }) {
   };
 
   const handleShareClick = (quizId) => {
-    const link = `http://localhost:5173/quiz/${quizId}`;
+    const link = `https://quizbuilder.vercel.app/quiz/${quizId}`;
     navigator.clipboard.writeText(link)
       .then(() => {
         toast.success('Link copied to clipboard!');

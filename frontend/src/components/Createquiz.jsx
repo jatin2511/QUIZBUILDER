@@ -194,7 +194,7 @@ function Createquiz() {
       );
 
       const quizId = response.data._id; 
-      setShareableLink(`http://localhost:5000/quiz/${quizId}`); 
+      setShareableLink(`https://quizbuilder.vercel.app/quiz/${quizId}`); 
       setQuizStep(3);
     } catch (error) {
       console.error('Error creating quiz:', error);
