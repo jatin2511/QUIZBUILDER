@@ -16,7 +16,7 @@ function EditQuiz({jwttoken}) {
     const fetchQuizDetails = async () => {
       try {
         
-        const response = await axios.get(`https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/analytics/quiz/${quizid}`, {
+        const response = await axios.get(`https://quizbuilder-ma4e.onrender.com/api/analytics/quiz/${quizid}`, {
           headers: {
             'Authorization': `Bearer ${jwttoken}`
           }
