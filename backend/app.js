@@ -15,7 +15,7 @@ app.use(express.json());
 
 
 app.use(cors({
-  origin: 'https://66d42b87c54e74fe32eb8a31--hilarious-moonbeam-5731f1.netlify.app', 
+  origin: 'https://quizbuilder.vercel.app', 
   methods: 'GET,POST,PUT,DELETE', 
   allowedHeaders: 'Content-Type,Authorization' 
 }));
