@@ -6,7 +6,7 @@ import styles from '../App.module.css';
 function Confirmdelete({ jwttoken, quizid, setconfirmdeleteopen, onDeleteSuccess }) {
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/delete/${quizid}`, {
+      await axios.delete(`https://quizbuilder-ma4e.onrender.com/api/quiz/delete/${quizid}`, {
         headers: {
           'Authorization': `Bearer ${jwttoken}`,
           'Content-Type': 'application/json',

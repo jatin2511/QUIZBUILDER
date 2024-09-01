@@ -100,7 +100,7 @@ function EditQuiz({jwttoken}) {
   
     try {
       await axios.put(
-        `https://quizbuilder-env.eba-qrrtm5dv.ap-south-1.elasticbeanstalk.com/api/quiz/update/${quizid}`,
+        `https://quizbuilder-ma4e.onrender.com/api/quiz/update/${quizid}`,
         {
           questions 
         },
