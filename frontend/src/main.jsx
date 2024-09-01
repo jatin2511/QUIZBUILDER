@@ -8,6 +8,6 @@ import './index.css'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <ToastContainer/>
+    <ToastContainer style={{zIndex:'100'}}/>
   </StrictMode>,
 )
